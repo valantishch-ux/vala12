@@ -461,7 +461,12 @@ mythic_echidna: {
     desc: "Κοίτα ψηλά στον ουρανό πάνω από τα βουνά! Τα αρπακτικά πουλιά, όπως οι γερακίνες και οι αετοί, είναι οι μόνιμοι φύλακες του Ολύμπου και των Πιερίων. Πετάνε σε τεράστιους κύκλους για ώρες χωρίς να κουνήσουν καθόλου τα φτερά τους; Αυτό το καταφέρνουν χάρη στα ζεστά ρεύματα του αέρα που τα σπρώχνουν προς τα πάνω σαν αόρατο ασανσέρ!", 
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivB4LyoWq_d_QE1Vr5jC1zxhr8XGIxgW8WqvH_TXVnPzOAPc2j0rbm09D2z11lI53OIA_KDNYJWH2hXOkXha1SZiaueBusmpjDvXkaylZ7DuhUMKCiljffubdS57oHWh0ofLE0CWrWbb22o9fRZPmrdx2yBhW7c60nHPBOkE3FogVGJz2WBL-4K0Q1sI4/s320/2026-07-09%2016_29_11-2025-09-25%2018_01_46-World%20of%20Warcraft.png", 
     sound: "" /* Ένα μακρόσυρτο, οξύ κάλεσμα γερακιού (hawk screech) είναι ιδανικό εδώ */
-  }
+  }, eco_hare: { 
+    title: "Ο Λαγός  🐇", 
+    desc: "Ο πρωταθλητής της ταχύτητας και του καμουφλάζ! Ο λαγός της υπαίθρου βασίζεται στην εκπληκτική του ακοή και στα πανίσχυρα πίσω πόδια του, που του επιτρέπουν να τρέξει με ταχύτητα έως και 70 χιλιόμετρα την ώρα, κάνοντας ελιγμούς ζιγκ-ζαγκ. Σηκώνει απότομα το κεφάλι και τινάζει τα μεγάλα του αυτιά για να εντοπίσει και τον παραμικρό ήχο κινδύνου.", 
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5FLbR1E5aGsdejdiZkzu5oQgmJJ9VBgHv_3Kupzhk6AMhKpbwwXJH1cK21Lj6GDljovHcD1H-BWcY7f0ubFiNnRX48DpqTN9KKUek4oU_ZaVm61sYQfzzuYJBDG__eq7V62vigi6u86aIXW5jOlKK8kydHfcyv9T9GVQqmYZ6vTWsV3EOjZcV4SJiPAM/s320/2026-07-09%2016_39_19-2025-09-25%2018_01_46-World%20of%20Warcraft.png", 
+    sound: ""
+  },
   };
 
   function showPlace(placeId, event) {
@@ -776,6 +781,8 @@ const ecoHoopoeHide = document.getElementById('hoopoe-eco-nature');
 if (ecoHoopoeHide) ecoHoopoeHide.classList.remove('active');
 const ecoHawkHide = document.getElementById('hawk-eco-nature');
 if (ecoHawkHide) ecoHawkHide.classList.remove('active');
+const ecoHareHide = document.getElementById('hare-eco-nature');
+if (ecoHareHide) ecoHareHide.classList.remove('active');
         button2.innerHTML = "✨Φώτισε όλα τα Μονοπάτια!";
 const hydra = document.getElementById('hydra-monster');
         if (hydra) hydra.classList.remove('active');
@@ -910,6 +917,8 @@ const ecoHoopoeHide = document.getElementById('hoopoe-eco-nature');
 if (ecoHoopoeHide) ecoHoopoeHide.classList.remove('active');
 const ecoHawkHide = document.getElementById('hawk-eco-nature');
 if (ecoHawkHide) ecoHawkHide.classList.remove('active');
+const ecoHareHide = document.getElementById('hare-eco-nature');
+if (ecoHareHide) ecoHareHide.classList.remove('active');
         button2.innerHTML = "⚡ Μυθική Πιερία!";
     mapState2 = 3;
 } 
@@ -1047,6 +1056,8 @@ const ecoHoopoeHide = document.getElementById('hoopoe-eco-nature');
 if (ecoHoopoeHide) ecoHoopoeHide.classList.remove('active');
 const ecoHawkHide = document.getElementById('hawk-eco-nature');
 if (ecoHawkHide) ecoHawkHide.classList.remove('active');
+const ecoHareHide = document.getElementById('hare-eco-nature');
+if (ecoHareHide) ecoHareHide.classList.remove('active');
         button2.innerHTML = "🌿Τα Μυστικά της Φύσης!"; // Προστέθηκε το κουμπί για το επόμενο βήμα!
         mapState2 = 4;
     }
@@ -1179,6 +1190,8 @@ const ecoHoopoe = document.getElementById('hoopoe-eco-nature');
 if (ecoHoopoe) ecoHoopoe.classList.add('active');
 const ecoHawk = document.getElementById('hawk-eco-nature');
 if (ecoHawk) ecoHawk.classList.add('active');
+const ecoHare = document.getElementById('hare-eco-nature');
+if (ecoHare) ecoHare.classList.add('active');
         button2.innerHTML = "🔄 Επαναφορά στην Αρχή!";
         mapState2 = 5;
     }
@@ -1313,6 +1326,8 @@ const ecoHoopoeHide = document.getElementById('hoopoe-eco-nature');
 if (ecoHoopoeHide) ecoHoopoeHide.classList.remove('active');
 const ecoHawkHide = document.getElementById('hawk-eco-nature');
 if (ecoHawkHide) ecoHawkHide.classList.remove('active');
+const ecoHareHide = document.getElementById('hare-eco-nature');
+if (ecoHareHide) ecoHareHide.classList.remove('active');
         button2.innerHTML = "🗺️ Ανακάλυψε τα υπόλοιπα!";
         mapState2 = 1;
     }
